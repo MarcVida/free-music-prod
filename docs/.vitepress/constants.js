@@ -16,6 +16,8 @@
 
 // @unocss-include
 
+export const icon = "FMP_LOGO_WHITE.png"
+
 export const meta = {
   name: 'Free Music Prod',
   description: 'A collection of free music production tools',

@@ -1,4 +1,5 @@
 import {
+    icon,
     commitRef,
     feedback,
     meta,
@@ -18,14 +19,14 @@ module.exports = {
         ['meta', { name: 'theme-color', content: '#A8B1FF' }],
         ['meta', { name: 'og:type', content: 'website' }],
         ['meta', { name: 'og:locale', content: 'en' }],
-        ['link', { rel: 'icon', href: '/fmp-logo-1.png' }],
+        ['link', { rel: 'icon', href: icon }],
         // PWA
-        ['link', { rel: 'icon', href: '/fmp-logo-1.png', type: 'image/svg+xml' }],
-        ['link', { rel: 'alternate icon', href: '/fmp-logo-1.png' }],
-        ['link', { rel: 'mask-icon', href: '/fmp-logo-1.png', color: '#A8B1FF' }],
+        ['link', { rel: 'icon', href: icon, type: 'image/svg+xml' }],
+        ['link', { rel: 'alternate icon', href: icon }],
+        ['link', { rel: 'mask-icon', href: icon, color: '#A8B1FF' }],
         // prettier-ignore
         ["meta", { name: "keywords", content: meta.keywords.join(" ") }],
-        ['link', { rel: 'apple-touch-icon', href: '/fmp-logo-1.png', sizes: '192x192' }]
+        ['link', { rel: 'apple-touch-icon', href: icon, sizes: '192x192' }]
     ],
     themeConfig: {
         nav: [
@@ -37,7 +38,10 @@ module.exports = {
             message: `${feedback} (rev: ${commitRef})`
         },
         outline: "deep",
-        logo: "/fmp-logo-1-resize.png",
+        logo: {
+            dark: "/FMP_LOGO_WHITE_RESIZED.png",
+            light: "/FMP_LOGO_GREY_RESIZED.png"
+        },
         socialLinks
     }
 }
