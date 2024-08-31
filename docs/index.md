@@ -5,10 +5,10 @@ description: A collection of free music production tools.
 
 hero:
   name: Free Music Prod
-  text: Sample Packs, Presets, Plugins & More
+  text: Samples, Presets, Plugins & More
   tagline: A collection of free music production tools.
   image:
-    src: /test.png
+    src: /fmp-logo-1-resize.png
     alt: FMP Icon
   actions:
     - theme: brand
@@ -32,3 +32,28 @@ features:
     link: /plugins
     details: Download free plugins!
 ---
+
+<style>
+  :root {
+    /* FMP Hero Name */
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+
+    /* FMP Logo Background */
+    --vp-home-hero-image-background-image: linear-gradient(-45deg, #c256f5 50%, #47caff 50%);
+    /* --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%); */
+    --vp-home-hero-image-filter: blur(54px);
+  }
+
+  @media (min-width: 640px) {
+    :root {
+      --vp-home-hero-image-filter: blur(56px);
+    }
+  }
+
+  @media (min-width: 960px) {
+    :root {
+      --vp-home-hero-image-filter: blur(68px);
+    }
+  }
+</style>
